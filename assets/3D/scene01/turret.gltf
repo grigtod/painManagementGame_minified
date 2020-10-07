@@ -1,0 +1,959 @@
+{
+  "asset": {
+    "version": "2.0",
+    "generator": "babylon.js glTF exporter for 3dsmax 2017 v20200312.5"
+  },
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        7
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "translation": [
+        0,
+        3.27028036,
+        0
+      ],
+      "name": "hole",
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "mesh": 1,
+      "translation": [
+        0.458419442,
+        -0.111580081,
+        1.258587
+      ],
+      "rotation": [
+        0,
+        0.8191522,
+        0,
+        0.5735763
+      ],
+      "scale": [
+        1.01675618,
+        1.01675618,
+        1.01675618
+      ],
+      "name": "turretCover2"
+    },
+    {
+      "mesh": 2,
+      "translation": [
+        0,
+        -2.61509037,
+        0
+      ],
+      "name": "turretShielding",
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "mesh": 3,
+      "translation": [
+        -1.0147177,
+        -2.60368037,
+        0
+      ],
+      "scale": [
+        0.715986133,
+        0.715986133,
+        0.7159862
+      ],
+      "name": "turretShooter",
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "children": [
+        5
+      ],
+      "mesh": 4,
+      "translation": [
+        0,
+        -2.61509037,
+        0
+      ],
+      "name": "turretTop",
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "mesh": 5,
+      "name": "turretConnector"
+    },
+    {
+      "mesh": 6,
+      "translation": [
+        -0.503356159,
+        -0.111580081,
+        -1.33867919
+      ],
+      "rotation": [
+        0,
+        0.8191522,
+        0,
+        0.573576331
+      ],
+      "scale": [
+        1.01675618,
+        1.01675618,
+        1.01675618
+      ],
+      "name": "turretCover1"
+    },
+    {
+      "mesh": 7,
+      "translation": [
+        0,
+        -0.0336669944,
+        0
+      ],
+      "name": "grassyBlocker",
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 11,
+            "NORMAL": 12,
+            "TEXCOORD_0": 13
+          },
+          "indices": 10,
+          "material": 0,
+          "mode": 4,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 2,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ],
+      "name": "hole"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 15,
+            "NORMAL": 16,
+            "TEXCOORD_0": 17
+          },
+          "indices": 14,
+          "material": 0,
+          "mode": 4,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 3,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ],
+      "name": "turretCover2"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 19,
+            "NORMAL": 20,
+            "TEXCOORD_0": 21
+          },
+          "indices": 18,
+          "material": 0,
+          "mode": 4,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 4,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ],
+      "name": "turretShielding"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 23,
+            "NORMAL": 24,
+            "TEXCOORD_0": 25
+          },
+          "indices": 22,
+          "material": 0,
+          "mode": 4,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 5,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ],
+      "name": "turretShooter"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 27,
+            "NORMAL": 28,
+            "TEXCOORD_0": 29
+          },
+          "indices": 26,
+          "material": 0,
+          "mode": 4,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 6,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ],
+      "name": "turretTop"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 31,
+            "NORMAL": 32,
+            "TEXCOORD_0": 33
+          },
+          "indices": 30,
+          "material": 0,
+          "mode": 4,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 7,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ],
+      "name": "turretConnector"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 35,
+            "NORMAL": 36,
+            "TEXCOORD_0": 37
+          },
+          "indices": 34,
+          "material": 0,
+          "mode": 4,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 8,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ],
+      "name": "turretCover1"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 39,
+            "NORMAL": 40,
+            "TEXCOORD_0": 41,
+            "TEXCOORD_1": 42
+          },
+          "indices": 38,
+          "material": 0,
+          "mode": 4,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 9,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2,
+                "TEXCOORD_1": 3
+              }
+            }
+          }
+        }
+      ],
+      "name": "grassyBlocker"
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 101,
+      "max": [
+        3.33333325
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR",
+      "name": "accessorAnimationInput",
+      "byteOffset": 0
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 101,
+      "type": "VEC3",
+      "name": "accessorAnimationPositions",
+      "byteOffset": 0
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 404,
+      "componentType": 5126,
+      "count": 101,
+      "max": [
+        3.33333325
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR",
+      "name": "accessorAnimationInput"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 1212,
+      "componentType": 5126,
+      "count": 101,
+      "type": "VEC3",
+      "name": "accessorAnimationPositions"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 808,
+      "componentType": 5126,
+      "count": 101,
+      "max": [
+        3.33333325
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR",
+      "name": "accessorAnimationInput"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 2424,
+      "componentType": 5126,
+      "count": 101,
+      "type": "VEC3",
+      "name": "accessorAnimationPositions"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 1212,
+      "componentType": 5126,
+      "count": 101,
+      "max": [
+        3.33333325
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR",
+      "name": "accessorAnimationInput"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 3636,
+      "componentType": 5126,
+      "count": 101,
+      "type": "VEC3",
+      "name": "accessorAnimationPositions"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 1616,
+      "componentType": 5126,
+      "count": 101,
+      "max": [
+        3.33333325
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR",
+      "name": "accessorAnimationInput"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 4848,
+      "componentType": 5126,
+      "count": 101,
+      "type": "VEC3",
+      "name": "accessorAnimationPositions"
+    },
+    {
+      "componentType": 5123,
+      "count": 480,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 320,
+      "max": [
+        1.51103449,
+        -3.14570713,
+        1.51103461
+      ],
+      "min": [
+        -1.51103449,
+        -4.55302238,
+        -1.51103437
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 320,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5126,
+      "count": 320,
+      "type": "VEC2",
+      "name": "accessorUVs"
+    },
+    {
+      "componentType": 5123,
+      "count": 84,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 64,
+      "max": [
+        2.81122565,
+        0.06380347,
+        1.42003667
+      ],
+      "min": [
+        1.39096546,
+        -0.0638032258,
+        -1.420482
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 64,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5126,
+      "count": 64,
+      "type": "VEC2",
+      "name": "accessorUVs"
+    },
+    {
+      "componentType": 5123,
+      "count": 240,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 176,
+      "max": [
+        1.28691781,
+        -0.014654858,
+        1.28691781
+      ],
+      "min": [
+        -1.28691781,
+        -0.6387548,
+        -1.28691781
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 176,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5126,
+      "count": 176,
+      "type": "VEC2",
+      "name": "accessorUVs"
+    },
+    {
+      "componentType": 5123,
+      "count": 468,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 282,
+      "max": [
+        3.30762315,
+        0.5521567,
+        0.4343189
+      ],
+      "min": [
+        1.17577064,
+        -0.316481,
+        -0.4343189
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 282,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5126,
+      "count": 282,
+      "type": "VEC2",
+      "name": "accessorUVs"
+    },
+    {
+      "componentType": 5123,
+      "count": 657,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 411,
+      "max": [
+        1.28405881,
+        1.26253974,
+        1.28405881
+      ],
+      "min": [
+        -1.28405881,
+        0.03301872,
+        -1.28405881
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 411,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5126,
+      "count": 411,
+      "type": "VEC2",
+      "name": "accessorUVs"
+    },
+    {
+      "componentType": 5123,
+      "count": 96,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 34,
+      "max": [
+        1.20960641,
+        0.03301879,
+        1.20960641
+      ],
+      "min": [
+        -1.20960641,
+        -0.363765746,
+        -1.20960641
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 34,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5126,
+      "count": 34,
+      "type": "VEC2",
+      "name": "accessorUVs"
+    },
+    {
+      "componentType": 5123,
+      "count": 84,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 84,
+      "max": [
+        -1.390967,
+        0.06380347,
+        1.42048228
+      ],
+      "min": [
+        -2.81122613,
+        -0.0638032258,
+        -1.42003644
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 84,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5126,
+      "count": 84,
+      "type": "VEC2",
+      "name": "accessorUVs"
+    },
+    {
+      "componentType": 5123,
+      "count": 390,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 390,
+      "max": [
+        3.133294,
+        0.2803625,
+        3.84185624
+      ],
+      "min": [
+        -3.091856,
+        -0.178360671,
+        -3.873288
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 390,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5126,
+      "count": 390,
+      "type": "VEC2",
+      "name": "accessorUVs"
+    },
+    {
+      "componentType": 5126,
+      "count": 390,
+      "type": "VEC2",
+      "name": "accessorUV2s"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 2020,
+      "name": "bufferViewAnimationFloatScalar"
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 2020,
+      "byteLength": 6060,
+      "name": "bufferViewAnimationFloatVec3"
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 8080,
+      "byteLength": 904
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 8984,
+      "byteLength": 316
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 9300,
+      "byteLength": 674
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 9976,
+      "byteLength": 961
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 10940,
+      "byteLength": 1277
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 12220,
+      "byteLength": 403
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 12624,
+      "byteLength": 319
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 12944,
+      "byteLength": 1197
+    }
+  ],
+  "buffers": [
+    {
+      "name": "turret",
+      "byteLength": 14144,
+      "uri": "turret.bin"
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 1,
+          "texCoord": 0
+        },
+        "metallicFactor": 0,
+        "baseColorFactor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "roughnessFactor": 1
+      },
+      "occlusionTexture": {
+        "index": 0,
+        "texCoord": 1
+      },
+      "doubleSided": true,
+      "name": "standardMaterial",
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE"
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0,
+      "name": "grassAmbient-Occlusion-_MR_.jpeg"
+    },
+    {
+      "sampler": 0,
+      "source": 1,
+      "name": "_standardPalette.png"
+    }
+  ],
+  "images": [
+    {
+      "name": "grassAmbient-Occlusion-_MR_",
+      "uri": "grassAmbient-Occlusion-_MR_.jpeg"
+    },
+    {
+      "name": "_standardPalette",
+      "uri": "_standardPalette.png"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "animations": [
+    {
+      "channels": [
+        {
+          "sampler": 0,
+          "target": {
+            "node": 1,
+            "path": "translation"
+          }
+        },
+        {
+          "sampler": 1,
+          "target": {
+            "node": 2,
+            "path": "translation"
+          }
+        },
+        {
+          "sampler": 2,
+          "target": {
+            "node": 3,
+            "path": "translation"
+          }
+        },
+        {
+          "sampler": 3,
+          "target": {
+            "node": 4,
+            "path": "translation"
+          }
+        },
+        {
+          "sampler": 4,
+          "target": {
+            "node": 6,
+            "path": "translation"
+          }
+        }
+      ],
+      "samplers": [
+        {
+          "input": 0,
+          "interpolation": 0,
+          "output": 1
+        },
+        {
+          "input": 2,
+          "interpolation": 0,
+          "output": 3
+        },
+        {
+          "input": 4,
+          "interpolation": 0,
+          "output": 5
+        },
+        {
+          "input": 6,
+          "interpolation": 0,
+          "output": 7
+        },
+        {
+          "input": 8,
+          "interpolation": 0,
+          "output": 9
+        }
+      ],
+      "name": "All Animations"
+    }
+  ],
+  "extensionsRequired": [
+    "KHR_draco_mesh_compression"
+  ],
+  "extensionsUsed": [
+    "KHR_draco_mesh_compression"
+  ]
+}

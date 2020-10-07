@@ -1,0 +1,264 @@
+{
+  "asset": {
+    "version": "2.0",
+    "generator": "babylon.js glTF exporter for 3dsmax 2017 v20200312.5"
+  },
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0,
+        1
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "translation": [
+        5.556374,
+        0.00800293,
+        -12.0927763
+      ],
+      "rotation": [
+        0.6532815,
+        0.270597965,
+        -0.270598,
+        0.6532815
+      ],
+      "scale": [
+        10,
+        10,
+        10
+      ],
+      "name": "Fence_Log_Pole023"
+    },
+    {
+      "mesh": 1,
+      "translation": [
+        16,
+        0.00800293,
+        12.038229
+      ],
+      "rotation": [
+        0.7071068,
+        0,
+        0,
+        0.7071067
+      ],
+      "scale": [
+        10,
+        10,
+        10
+      ],
+      "name": "fence_londSide004"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 1,
+            "NORMAL": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 0,
+          "material": 0,
+          "mode": 4,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 0,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ],
+      "name": "Fence_Log_Pole023"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 5,
+            "NORMAL": 6,
+            "TEXCOORD_0": 7
+          },
+          "indices": 4,
+          "material": 0,
+          "mode": 4,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 1,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ],
+      "name": "fence_londSide004"
+    }
+  ],
+  "accessors": [
+    {
+      "componentType": 5123,
+      "count": 7728,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 4536,
+      "max": [
+        1.41616654,
+        3.124852,
+        -0.0005248368
+      ],
+      "min": [
+        -1.71784687,
+        -0.008511927,
+        -0.11544352
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 4536,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5126,
+      "count": 4536,
+      "type": "VEC2",
+      "name": "accessorUVs"
+    },
+    {
+      "componentType": 5123,
+      "count": 23895,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 14501,
+      "max": [
+        0.9786793,
+        0.03281409,
+        -0.02056972
+      ],
+      "min": [
+        -1.06576407,
+        -2.44274,
+        -0.09172394
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 14501,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5126,
+      "count": 14501,
+      "type": "VEC2",
+      "name": "accessorUVs"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 16532
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 16532,
+      "byteLength": 41669
+    }
+  ],
+  "buffers": [
+    {
+      "name": "enclosure",
+      "byteLength": 58204,
+      "uri": "enclosure.bin"
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 1,
+          "texCoord": 0
+        },
+        "metallicFactor": 0,
+        "baseColorFactor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "roughnessFactor": 1
+      },
+      "occlusionTexture": {
+        "index": 0,
+        "texCoord": 1
+      },
+      "doubleSided": true,
+      "name": "standardMaterial",
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE"
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0,
+      "name": "grassAmbient-Occlusion-_MR_.jpeg"
+    },
+    {
+      "sampler": 0,
+      "source": 1,
+      "name": "_standardPalette.png"
+    }
+  ],
+  "images": [
+    {
+      "name": "grassAmbient-Occlusion-_MR_",
+      "uri": "grassAmbient-Occlusion-_MR_.jpeg"
+    },
+    {
+      "name": "_standardPalette",
+      "uri": "_standardPalette.png"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "extensionsRequired": [
+    "KHR_draco_mesh_compression"
+  ],
+  "extensionsUsed": [
+    "KHR_draco_mesh_compression"
+  ]
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!--meta http-equiv="refresh" content="1" > <!---- Automatic refresh-->
+        <style>
+           html, body {
+               overflow: hidden;
+               width: 100%;
+               height: 100%;
+               margin: 0;
+               padding: 0;
+           }
+
+           #renderCanvas {
+               width: 100%;
+               height: 100%;
+               touch-action: none;
+           }
+       </style>
+        <title>Test Scene</title>
+        <!--DEV-->
+        <script src="src/_babylon_v4.2.0-alpha.18.js"></script> <!--Version used to develop. CDN: https://preview.babylonjs.com/babylon.max.js -->
+        <script src="src/_babylonjs.loaders.min.js"></script> <!-- CDN: https://cdn.babylonjs.com/loaders/babylonjs.loaders.min.js -->
+        <script src="src/_babylonjs.materials.min.js"></script> <!-- CDN: https://preview.babylonjs.com/materialsLibrary/babylonjs.materials.min.js -->
+        <script src="src/_babylon.gui.min.js"></script> <!-- CDN: https://preview.babylonjs.com/gui/babylon.gui.min.js -->
+        <script src="src/dataVars.js"></script>
+        <script src="src/mathManager.js"></script>
+        <script src="src/loaderManager.js"></script>
+        <script src="src/audioPlayer.js"></script>
+        <script src="src/destructibleTerrain.js"></script>
+        <script src="src/objectPool.js"></script>
+        <script src="src/gameManager.js"></script>
+        <script src="src/xrManager.js"></script>
+        <!--script src="src/shadowManager.js"></script CURRENTLY NOT IN USE BECAUSE IT REDUCES PERFORMANCE TOO MUCH!-->
+        <script src="src/skyManager.js"></script>
+        <script src="src/turretController.js"></script>
+        <script src="src/crosshairController.js"></script>
+        <script src="src/gazeController.js"></script>
+        <script src="src/buttonController.js"></script>
+        <script src="src/effectsHelper.js"></script>
+        <script src="src/animalsManager.js"></script>
+        <script src="src/componentSystem.js"></script>
+        <script src="src/debugTools.js"></script> <!-- make sure you remove it's render loop!!!-->
+
+        <!--RELEASE>
+        <script src="src/game"></script-->
+    </head>
+
+    <body>
+        <!-- Babylon Code -->
+        <canvas id="renderCanvas"></canvas>
+        <script type="text/javascript">
+        let gamePaused = true;
+        function startBabylon()
+        {
+            var canvas = document.getElementById('renderCanvas');
+            var engine = new BABYLON.Engine(canvas, true, { deterministicLockstep: true, lockstepMaxSteps: 4});
+
+            var createScene = async function() {
+                var scene = new BABYLON.Scene(engine);
+                global_sceneRef = scene;
+                global_engineRef = engine;
+                var camera;
+
+                global_dirLightRef = new BABYLON.DirectionalLight("DirectionalLight", new BABYLON.Vector3(0, -1, 0), global_sceneRef);
+                global_dirLightRef.intensity = 1;
+
+
+                //shadowManager.createShadowAndLight(1, 512);
+
+                //scene.ambientColor = new BABYLON.Color3.Black();
+                //var light = new BABYLON.DirectionalLight("dir01", new BABYLON.Vector3(-1, -2, -1), scene);
+             // light.position = new BABYLON.Vector3(-10, 5, 10);
+              //ight.intensity = 0.1;
+
+
+                if(debug_orbitCam) //camera used for testing
+                    camera = new BABYLON.ArcRotateCamera("Camera", 0, 0.2, 480, new BABYLON.Vector3.Zero(), scene);
+                else //normal camera
+                    camera = new BABYLON.FreeCamera("camera1", new BABYLON.Vector3(0, 0, 0), scene);
+
+                if(debug_noXR === false)
+                    camera.inputs.clear();  // if this is not a debug build then disable keyboard arros keys from the start camera
+
+                camera.position = new BABYLON.Vector3(5, 4, 0)
+                camera.setTarget(new BABYLON.Vector3(-20, 0, 0));
+                camera.attachControl(canvas, true);   //look around, useful for debug!
+
+                global_sceneRef.environmentTexture = BABYLON.CubeTexture.CreateFromPrefilteredData(envTex_environmentTex, global_sceneRef);
+
+                if(debug_noXR === false)
+                {
+                    try{
+                        xrManager.setUpXR(camera, await BABYLON.WebXRExperienceHelper.CreateAsync(global_sceneRef));
+                    }
+                    catch (error){
+                        xrManager.failedXR();
+                    }
+                }
+                else
+                {
+                    xrManager.setCustomCamFwd(camera);
+                    gamePaused = false;
+                }
+
+                gameManager.setUpGame(xrManager.getCamFwd(), debug_noXR);
+
+                if(debug_showDebugLayer === true)
+                    debugTools.showDebugLayer(scene);
+
+                engine.runRenderLoop(function() {
+                    scene.render();
+                    debugTools.updateFPSMeter();
+                    gameManager.renderUpdate();
+                 });
+
+                scene.onBeforeStepObservable.add(function(scene){
+                    if(!gamePaused)
+                        gameManager.earlyUpdate();
+                });
+
+                scene.onAfterStepObservable.add(function(scene){
+                    if(!gamePaused)
+                        gameManager.lateUpdate();
+                });
+
+                return scene;
+            };
+
+            var scene = createScene();
+
+            window.addEventListener('resize', function(){
+                engine.resize();
+            });
+        }
+        startBabylon();
+        </script>
+    <!-- Babylon Code End-->
+    </body>
+</html>

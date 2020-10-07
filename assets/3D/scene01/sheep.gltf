@@ -1,0 +1,234 @@
+{
+  "asset": {
+    "version": "2.0",
+    "generator": "babylon.js glTF exporter for 3dsmax 2017 v20200312.5"
+  },
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "translation": [
+        0,
+        0.5455878,
+        0
+      ],
+      "name": "sheep",
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 3,
+            "NORMAL": 4,
+            "TEXCOORD_0": 5
+          },
+          "indices": 2,
+          "material": 0,
+          "mode": 4,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 2,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ],
+      "name": "sheep"
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 101,
+      "max": [
+        3.33333325
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR",
+      "name": "accessorAnimationInput",
+      "byteOffset": 0
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 101,
+      "type": "VEC3",
+      "name": "accessorAnimationPositions",
+      "byteOffset": 0
+    },
+    {
+      "componentType": 5123,
+      "count": 636,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 308,
+      "max": [
+        0.154539108,
+        0.269551039,
+        0.5115991
+      ],
+      "min": [
+        -0.154539108,
+        -0.5455878,
+        -0.5115991
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 308,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5126,
+      "count": 308,
+      "type": "VEC2",
+      "name": "accessorUVs"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 404,
+      "name": "bufferViewAnimationFloatScalar"
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 404,
+      "byteLength": 1212,
+      "name": "bufferViewAnimationFloatVec3"
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1616,
+      "byteLength": 1154
+    }
+  ],
+  "buffers": [
+    {
+      "name": "sheep",
+      "byteLength": 2772,
+      "uri": "sheep.bin"
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 1,
+          "texCoord": 0
+        },
+        "metallicFactor": 0,
+        "baseColorFactor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "roughnessFactor": 1
+      },
+      "occlusionTexture": {
+        "index": 0,
+        "texCoord": 1
+      },
+      "doubleSided": true,
+      "name": "standardMaterial",
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE"
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0,
+      "name": "grassAmbient-Occlusion-_MR_.jpeg"
+    },
+    {
+      "sampler": 0,
+      "source": 1,
+      "name": "_standardPalette.png"
+    }
+  ],
+  "images": [
+    {
+      "name": "grassAmbient-Occlusion-_MR_",
+      "uri": "grassAmbient-Occlusion-_MR_.jpeg"
+    },
+    {
+      "name": "_standardPalette",
+      "uri": "_standardPalette.png"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "animations": [
+    {
+      "channels": [
+        {
+          "sampler": 0,
+          "target": {
+            "node": 0,
+            "path": "translation"
+          }
+        }
+      ],
+      "samplers": [
+        {
+          "input": 0,
+          "interpolation": 0,
+          "output": 1
+        }
+      ],
+      "name": "All Animations"
+    }
+  ],
+  "extensionsRequired": [
+    "KHR_draco_mesh_compression"
+  ],
+  "extensionsUsed": [
+    "KHR_draco_mesh_compression"
+  ]
+}

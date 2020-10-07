@@ -1,0 +1,318 @@
+{
+  "asset": {
+    "version": "2.0",
+    "generator": "babylon.js glTF exporter for 3dsmax 2017 v20200312.5"
+  },
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0,
+        1
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "translation": [
+        344.27478,
+        0.00800293,
+        7.689008
+      ],
+      "name": "sea",
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "mesh": 1,
+      "translation": [
+        0,
+        -0.155161142,
+        0
+      ],
+      "name": "river",
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 5,
+            "NORMAL": 6,
+            "TEXCOORD_0": 7
+          },
+          "indices": 4,
+          "material": 0,
+          "targets": [
+            {
+              "POSITION": 0,
+              "NORMAL": 1
+            }
+          ],
+          "mode": 4,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 2,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ],
+      "weights": [
+        0
+      ],
+      "name": "sea"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 9,
+            "NORMAL": 10,
+            "TEXCOORD_0": 11
+          },
+          "indices": 8,
+          "material": 0,
+          "mode": 4,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 3,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ],
+      "name": "river"
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "byteOffset": 193536,
+      "componentType": 5126,
+      "count": 8064,
+      "max": [
+        0,
+        4.22517157,
+        0
+      ],
+      "min": [
+        0,
+        -4.72510529,
+        0
+      ],
+      "type": "VEC3",
+      "name": "accessorTargetPositions"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 290304,
+      "componentType": 5126,
+      "count": 8064,
+      "type": "VEC3",
+      "name": "accessorTargetNormals"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 3,
+      "max": [
+        3.33333325
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR",
+      "name": "accessorAnimationInput",
+      "byteOffset": 0
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 12,
+      "componentType": 5126,
+      "count": 3,
+      "type": "SCALAR",
+      "name": "accessorAnimationWeights"
+    },
+    {
+      "componentType": 5123,
+      "count": 8064,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 8064,
+      "max": [
+        13.83622,
+        11.3487644,
+        200.000015
+      ],
+      "min": [
+        -281.3379,
+        -9.700157,
+        -200.000015
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 8064,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5126,
+      "count": 8064,
+      "type": "VEC2",
+      "name": "accessorUVs"
+    },
+    {
+      "componentType": 5123,
+      "count": 7392,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 7392,
+      "max": [
+        75.13099,
+        0.242908761,
+        -20.1833477
+      ],
+      "min": [
+        -75.07994,
+        -0.2609608,
+        -54.56411
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 7392,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5126,
+      "count": 7392,
+      "type": "VEC2",
+      "name": "accessorUVs"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 564480,
+      "byteStride": 12,
+      "name": "bufferViewFloatVec3",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 564480,
+      "byteLength": 24,
+      "name": "bufferViewAnimationFloatScalar"
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 564504,
+      "byteLength": 43648
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 608152,
+      "byteLength": 11443
+    }
+  ],
+  "buffers": [
+    {
+      "name": "water",
+      "byteLength": 619596,
+      "uri": "water.bin"
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0,
+          0.254901975,
+          0.7725491,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.4
+      },
+      "name": "water",
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE",
+      "doubleSided": false
+    }
+  ],
+  "animations": [
+    {
+      "channels": [
+        {
+          "sampler": 0,
+          "target": {
+            "node": 0,
+            "path": "weights"
+          }
+        }
+      ],
+      "samplers": [
+        {
+          "input": 2,
+          "interpolation": 0,
+          "output": 3
+        }
+      ],
+      "name": "All Animations"
+    }
+  ],
+  "extensionsRequired": [
+    "KHR_draco_mesh_compression"
+  ],
+  "extensionsUsed": [
+    "KHR_draco_mesh_compression"
+  ]
+}
