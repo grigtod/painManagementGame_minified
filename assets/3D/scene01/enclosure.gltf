@@ -234,7 +234,7 @@
     {
       "sampler": 0,
       "source": 1,
-      "name": "_standardPalette.png"
+      "name": "standardPalette.png"
     }
   ],
   "images": [
@@ -243,8 +243,8 @@
       "uri": "grassAmbient-Occlusion-_MR_.jpeg"
     },
     {
-      "name": "_standardPalette",
-      "uri": "_standardPalette.png"
+      "name": "standardPalette",
+      "uri": "standardPalette.png"
     }
   ],
   "samplers": [
