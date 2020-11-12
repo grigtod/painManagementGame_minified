@@ -1,1 +1,0 @@
-shadowManager=function(){let _0x4b7f40=function(_0x20b9e0,_0x366a07){},_0x2b1a0b=function(_0x17e1ec){};return{'createShadowAndLight':_0x4b7f40,'changeLightRotation':_0x2b1a0b};}();
